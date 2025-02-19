@@ -52,7 +52,7 @@ def main():
         choice = input("Choose an option: ")
         
         if choice == "1":
-            category = input("Enter category (Food, Transport, etc.): ")
+            category = input("Enter category (Food, Transport, etc.): ").lower()
             amount = input("Enter amount: ")
             date = input("Enter date (YYYY-MM-DD): ")
             add_expense(category, amount, date)
